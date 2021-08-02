@@ -32,10 +32,6 @@
   }
   &__logo {
     flex: 1 1 auto;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 38 / 26 * 100%;
-    color: #37447E;
     padding: 0px 20px;
     z-index: 2;
   }
@@ -49,7 +45,7 @@
     @include adaptiv-value("min-width", 160, 120, 1);
   }
 }
-.menu {
+.menu{
   &__body {
     @media (max-width:$md3+px){
       position: fixed;

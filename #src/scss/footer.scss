@@ -1,5 +1,91 @@
-footer {
-}
 //====================================================================================================
-
+.footer {
+  background-color: #E7ECFF;
+  &__container {}
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 216px;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 40px 0px;
+    border-bottom: 1px solid #CDD1D4;
+    margin: 0px 0px 15px 0px;
+  }
+  &__copy {
+    color: #939EA4;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24 / 14 * 100%;
+    flex: 0 1 50%;
+  }
+  &__logo {
+    flex: 1 1 auto;
+    @media (max-width:$md4+px){
+      display: none; 
+    }
+  }
+  &__action {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 1 50%;
+  }
+  &__btn {
+    min-width: 109px;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width:$md4+px){
+      flex-direction: column;
+      justify-content: center; 
+    }
+  }
+}
+.menu-footer {
+  @media (max-width:$md4+px){
+    margin: 0px 0px 10px 0px; 
+  }
+  &__list {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+  }
+  &__item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    &:not(:last-child) {
+      @include adaptiv-value("margin-right", 60, 20, 1);
+    }  
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 24 / 14 * 100%;
+    color: #505F98;
+    @media (any-hover: hover){
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.social {
+  display: flex;
+  &__item {
+    color: #B0B8BC;
+    transition: color 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+        color: #37447E;
+      }
+    }
+    &:not(:last-child) {margin: 0px 30px 0px 0px;}
+  }
+}
 //====================================================================================================
