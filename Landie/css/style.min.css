@@ -165,8 +165,17 @@ body._lock {
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
-  border-radius: 2px;
   transition: background-color 0.3s ease 0s;
+  color: #091133;
+  border: 1px solid #091133;
+  border-radius: 2px;
+}
+@media (any-hover: hover) {
+  .button:hover {
+    border: 1px solid #505F98;
+    background-color: #505F98;
+    color: #fff;
+  }
 }
 .button_primary {
   background-color: #111B47;
@@ -174,7 +183,7 @@ body._lock {
 }
 @media (any-hover: hover) {
   .button_primary:hover {
-    background-color: #505F98;
+    background-color: #000;
   }
 }
 
@@ -1009,4 +1018,90 @@ body.ie ._ibg img {
 */
 .page {
   flex: 1 1 auto;
+}
+
+.hello {
+  display: flex;
+  min-height: 100vh;
+  padding: 100px 0;
+  position: relative;
+}
+.hello__container {
+  display: flex;
+}
+.hello__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+}
+@media (min-width: 991.98px) {
+  .hello__body {
+    flex: 0 1 50%;
+  }
+}
+.hello__body *:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.hello__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 132%;
+  margin: 0px 0px 20px 0px;
+}
+@media (max-width: 1140px) {
+  .hello__title {
+    font-size: calc(30px + 20 * ((100vw - 320px) / 820));
+  }
+}
+.hello__text {
+  font-size: 18px;
+  line-height: 166.6666666667%;
+  color: #505F98;
+  margin: 0px 0px 65px 0px;
+}
+@media (max-width: 1140px) {
+  .hello__text {
+    font-size: calc(15px + 3 * ((100vw - 320px) / 820));
+  }
+}
+.hello__actions {
+  margin: 0px 0px 20px 0px;
+}
+@media (max-width: 479.98px) {
+  .hello__actions {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+}
+.hello__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -34.0277777778%;
+}
+@media (max-width: 991.98px) {
+  .hello__image {
+    opacity: 0.2;
+    left: 0;
+  }
+}
+.hello__btn {
+  font-size: 16px;
+  min-height: 36px;
+  min-width: 189px;
+}
+.hello__btn:first-child {
+  margin: 0px 25px 0px 0px;
+}
+@media (max-width: 479.98px) {
+  .hello__btn {
+    min-height: 46px;
+  }
+  .hello__btn:first-child {
+    margin: 0px 0px 20px 0px;
+  }
 }

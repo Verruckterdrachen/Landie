@@ -25,14 +25,23 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 18 / 12 * 100%;
-  border-radius: 2px;
   transition: background-color 0.3s ease 0s;
+  color: $mainColor;
+  border: 1px solid $mainColor;
+  border-radius: 2px;
+  @media (any-hover: hover){
+    &:hover{
+      border: 1px solid #505F98;
+      background-color: #505F98;
+      color: #fff;  
+    }
+  }
 	&_primary {
     background-color: #111B47;
     color: #fff;
     @media (any-hover: hover){
       &:hover{
-        background-color: #505F98;
+        background-color: #000;
       }
     }
   }
