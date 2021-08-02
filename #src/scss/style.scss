@@ -249,5 +249,45 @@ body {
   }
 }
 //============================================================================
-
+.pricing {
+  @include adaptiv-value("padding-top", 200, 40, 1);
+  @include adaptiv-value("padding-bottom", 160, 40, 1);
+  position: relative;
+  background: #f3f6ff;
+  &__body {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+  }
+  &__title {
+    margin: 0px 0px 10px 0px;
+  }
+  &__text {
+    max-width: 600px;
+    margin: 0px auto 30px auto;
+  }
+  &__price {
+    color: #37447E;
+    line-height: 26 / 16 * 100%;
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 66 / 50 * 100%;
+      color: #222F65;
+      margin: 0px 0px 5px 0px;
+    }
+    margin: 0px 0px 60px 0px;
+  }
+  &__label {
+    font-size: 14px;
+    line-height: 24 / 14 * 100%;
+    color: #5D6970;
+    margin: 0px 0px 10px 0px;
+  }
+  &__btn {
+    min-width: 189px;
+    min-height: 32px;
+  }
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================

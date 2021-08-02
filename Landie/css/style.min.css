@@ -1355,3 +1355,55 @@ body.ie ._ibg img {
 .item-intro__title {
   margin: 0px 0px 10px 0px;
 }
+
+.pricing {
+  padding-top: 200px;
+  padding-bottom: 160px;
+  position: relative;
+  background: #f3f6ff;
+}
+@media (max-width: 1140px) {
+  .pricing {
+    padding-top: calc(40px + 160 * ((100vw - 320px) / 820));
+  }
+}
+@media (max-width: 1140px) {
+  .pricing {
+    padding-bottom: calc(40px + 120 * ((100vw - 320px) / 820));
+  }
+}
+.pricing__body {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+.pricing__title {
+  margin: 0px 0px 10px 0px;
+}
+.pricing__text {
+  max-width: 600px;
+  margin: 0px auto 30px auto;
+}
+.pricing__price {
+  color: #37447E;
+  line-height: 162.5%;
+  margin: 0px 0px 60px 0px;
+}
+.pricing__price span {
+  display: block;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 132%;
+  color: #222F65;
+  margin: 0px 0px 5px 0px;
+}
+.pricing__label {
+  font-size: 14px;
+  line-height: 171.4285714286%;
+  color: #5D6970;
+  margin: 0px 0px 10px 0px;
+}
+.pricing__btn {
+  min-width: 189px;
+  min-height: 32px;
+}
